@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Shivam</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script>
+        function greetUser() {
+            const hours = new Date().getHours();
+            let greeting;
+            if (hours < 12) greeting = "Good Morning 🌅";
+            else if (hours < 18) greeting = "Good Afternoon ☀️";
+            else greeting = "Good Evening 🌙";
+            document.getElementById("greet").innerText = greeting + " Shivam Mantri!";
+        }
+        window.onload = greetUser;
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="greet">Hello Shivam!</h1>
+        <h2>Personal Portfolio</h2>
+
+        <div class="card">
+            <p><strong>Name:</strong> {{ details.name }}</p>
+            <p><strong>College:</strong> {{ details.college }}</p>
+            <p><strong>Course:</strong> {{ details.course }}</p>
+            <p><strong>Skills:</strong> {{ details.skills }}</p>
+            <p><strong>Location:</strong> {{ details.location }}</p>
+            <p><strong>Current Time:</strong> {{ details.time }}</p>
+        </div>
+
+        <button onclick="alert('Keep shining, Shivam! ✨')">Click for Motivation</button>
+    </div>
+</body>
+
+</html>
