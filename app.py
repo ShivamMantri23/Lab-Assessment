@@ -10,9 +10,9 @@ def home():
         'Name': 'Shivam Mantri',
         'Institution': 'Centre of Development of Advanced Technology (CDAC), Noida',
         'Course': 'Post Graduate-Diploma in Artificial Intelligence (PG-DAI)',
-        'skills': 'Python, Java, C/C++, Linux, MERN, Machine Learning, RHEL',
-        'location': 'Jaipur, Rajasthan',
-        'time': datetime.now().strftime("%A, %d %B %Y, %I:%M %p")
+        'Skills': 'Python, Java, C/C++, Linux, MERN, Machine Learning, RHEL',
+        'Location': 'Jaipur, Rajasthan',
+        'Time': datetime.now().strftime("%A, %d %B %Y, %I:%M %p")
     }
     return render_template('index.html', details=details)
 
